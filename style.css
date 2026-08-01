@@ -74,12 +74,12 @@
 .card__price--current{
     font-family: var(--font-title);
     font-size: 2rem;
-    color: var(--Green);
+    color: var(--green);
     font-weight: 700;
 }
 .card__price--old{
     font-size: 0.9375rem;
-    color: var(--Grey);
+    color: var(--grey);
     text-decoration: line-through;
     font-weight: 500;
 }
