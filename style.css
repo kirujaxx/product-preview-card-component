@@ -1,0 +1,129 @@
+*,*::after,*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ///////////////////////var///////////////////////// */
+:root{
+    --green: hsl(158, 36%, 37%);
+    --green-hover: hsl(158, 42%, 18%);
+    --black: hsl(212, 21%, 14%);
+    --grey: hsl(228, 12%, 48%);
+    --cream: hsl(30, 38%, 92%);
+    --white: hsl(0, 0%, 100%);
+    --font-title: 'Fraunces', sans-serif;
+    --font: 'Montserrat', sans-serif;
+}
+  body{
+    font-family: var(--font);
+    background-color: var(--cream);
+  }
+  .wrapper{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card{
+    display: flex;
+    width: 40.625rem;
+    background-color: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .card__content{
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    width: 50%;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+.card__picture{
+    display: block;
+    width: 50%;
+   
+}
+.card__picture img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+
+}
+.card__label{
+    color: var(--grey);
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+.card__title{
+    font-family: var(--font-title);
+    font-size: 2rem;
+    color: var(--black);
+}
+.card__text{
+    color: var(--grey);
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.card__price--current{
+    font-family: var(--font-title);
+    font-size: 2rem;
+    color: var(--Green);
+    font-weight: 700;
+}
+.card__price--old{
+    font-size: 0.9375rem;
+    color: var(--Grey);
+    text-decoration: line-through;
+    font-weight: 500;
+}
+.card__price{
+    display: flex;
+    align-items: center;
+    gap:0.9375rem;
+}
+.card__btn{
+    background-color: var(--green);
+    color: var(--white);
+    font-family: var(--font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    transition: background-color 0.3s ease-in-out;
+    border: none;
+    padding: 0.9375rem 0;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.card__btn:hover{
+    background-color: var(--green-hover);
+}
+.card__btn:focus-visible {
+    outline: 2px solid var(--black);
+    outline-offset: 3px;
+}
+
+@media screen and (max-width: 600px){
+    .card{
+        flex-direction: column;
+        width: 90%;
+    }
+    .card__picture{
+        width: 100%;
+    }
+    .card__content{
+        width: 100%;
+        padding: 1.25rem;
+    }
+    
+}
