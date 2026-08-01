@@ -37,7 +37,7 @@ The design files include both desktop and mobile layouts in JPG format. Use your
 
 ## Deployment
 
-This project is hosted on [GitHub Pages](https://pages.github.com/). You can view the live demo [here](#).
+This project is hosted on [GitHub Pages](https://kirujaxx.github.io/product-preview-card-component/). You can view the live demo [here](#).
 
 ## Feedback
 
